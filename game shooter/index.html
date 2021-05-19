@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game</title>
+</head>
+
+<body>
+	<style>
+		body {
+			margin: 0;
+			background-color: black;
+		}
+	</style>
+
+	<style>
+		.score {
+			position: fixed;
+			color: white;
+			font-size: 26px;
+			margin: 10px;
+			user-select: none;
+		}
+	</style>
+	<div class="score"><span>Score: </span><span id="scoreEl">0</span></div>
+
+	<style>
+		.titles {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		.titles-window {
+			padding: 20px;
+			border-radius: 30px;
+			background-color: white;
+		}
+
+		.titles-score {
+			font-size: 60px;
+			margin: 0;
+			user-select: none;
+
+		}
+
+		.titles-text {
+			font-size: 25px;
+			color: gray;
+			margin-top: 0;
+			margin-bottom: 20px;
+			user-select: none;
+		}
+
+		.titles-start {
+			background-color: rgb(55, 119, 202);
+			border: none;
+			width: 400px;
+			height: 60px;
+			font-size: 20px;
+			color: white;
+			border-radius: 10000px;
+			user-select: none;
+
+
+		}
+	</style>
+	<div class="titles">
+		<div class="titles-window">
+			<h1 class="titles-score">0</h1>
+			<p class="titles-text">Points</p>
+			<button class="titles-start">Start</button>
+		</div>
+	</div>
+
+	<canvas></canvas>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+		integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+		crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
